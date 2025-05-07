@@ -1,0 +1,381 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Chic</title>
+    <style>
+
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fbf6f6;
+  color: #050000;
+}
+
+
+header {
+  background-color: #000000;
+  padding: 30px ;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;  
+}
+
+nav ul.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+nav ul.nav-links li {
+  font-size: 19px;
+}
+
+nav ul.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+nav ul.nav-links li a:hover {
+  background-color: #f6e354;
+  color: #000000;
+  transform: translateY(-5px);
+}
+
+
+.hero {
+  background-image: url('./img/hero.png');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(11, 12, 12);
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.hero .hero-content h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.hero .hero-content p {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+
+.hero .cta-button {
+  background-color: #070600;
+  padding: 15px;
+  color: rgb(254, 250, 250);
+  font-size: 1em;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.hero .cta-button:hover {
+  background-color: #f6e354;
+  color: #000000;
+}
+
+
+.newArrival {
+  background-color: rgba(66, 63, 63, 0.379);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.arrival-container {
+ display: flex;
+ justify-content: space-around;
+ gap:20px;
+}
+
+.arrival-box {
+  background-color: #120202;
+  color: #ffffff;
+  padding: 15px;
+  width: 29%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+  
+
+.arrival-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(56, 56, 56, 0.996);
+}
+
+.arrival-box img {
+  width: 100%;
+  border-radius:5px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.arrival-box:hover img{
+ transform: scale(1.1);
+}
+
+.arrival-box h3 {
+  font-size: 1.3em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.arrival-box p {
+  font-size: 1em;
+  font-family: 'Courier New', Courier, monospace;
+  color: #e3dddd99;
+}
+
+
+.collection {
+  background-color: rgb(129, 126, 126);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.collection h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.collection-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.collection-box {
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgb(55, 54, 54);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collection-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgb(251, 249, 249);
+}
+
+.collection-box img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.collection-box:hover img {
+  transform: scale(1.1);
+}
+
+.collection-box h3 {
+  font-size: 1.6em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.collection-box p {
+  font-size: 1.1em;
+  font-family: 'Courier New', Courier, monospace;
+  color: #969494;
+}
+
+.cta {
+  background-color: #333;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2.5em;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 1.2em;
+  font-family:'Courier New', Courier, monospace;
+  margin-bottom: 30px;
+}
+
+.cta form {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.cta input[type="email"] {
+  padding: 15;
+  width: 300px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  border: none;
+}
+
+.cta button {
+  background-color: #060604;
+  padding: 10px;
+  text-align: center;
+  width: 90px;
+  color: white;
+  font-size: 1em;
+  border-radius: 70px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+  background-color: #f6e354;
+  color: #000000;
+}
+
+.contact{
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+.contact h4{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: 2;
+font-size:smaller;
+}
+
+.contact-box .cta-button {
+  background-color: #070600;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.contact-box .cta-button:hover {
+  background-color: #f6e354;
+  color: #000000;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 1em;
+}
+    </style>
+</head>
+<body>
+    <header>
+            <nav>
+                <div class="navItem">
+                    <img src="./img/Urban chic (1).png" width="120" height="120" alt="Urban Chic Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#newArrival">New Arrival</a></li>
+                    <li><a href="#collection">Collections</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>STAY STYLISH WITH URBAN CHIC!</h1>
+            <p>Discover The Latest Trends In Clothing, Accessories, And Footwear!...</p>
+            <a href="#newArrival" class="cta-button">Shop The Collection</a>
+        </div>
+    </section>
+    
+    <section id="newArrival" class="newArrival">
+        <div class="arrival-container">
+            <div class="arrival-box">
+                <img src="./img/trendyDresses.png" alt="New-Arrival 1">
+                <h3>TRENDY DRESSES</h3>
+                <p>Explore Our Latest Collection Of Stylish Dresses.</p>
+            </div>
+        
+            <div class="arrival-box">
+                <img src="./img/shoe.png" alt="New-Arrival 2">
+                <h3>DESIGNER FOOTWEARS</h3>
+                <p>Step Out In Style With Our New Footwear Range.</p>
+            </div>
+
+            <div class="arrival-box">
+                <img src="./img/accessories.png" alt="New-Arrival 3">
+                <h3>CHIC ACCESSORIES</h3>
+                <p>Complete Your Look With Our Trendy Accessories.</p>
+            </div> 
+        </div>
+        </section>
+
+        <section id="collection" class="collection">
+            <h2>SEASONAL COLLECTIONS</h2>
+            <div class="collection-container">
+            <div class="collection-box">
+                <img src="./img/summer.png" alt="summerCollections">
+                <h3>SUMMER COLLECTIONS</h3>
+                <p>Stay Cool And Stylish This Summer.</p>
+            </div>
+
+            <div class="collection-box">
+                <img src="./img/winter.png" alt="winterCollections">
+                <h3>WINTER COLLECTIONS</h3>
+                <p>Brighten Up Your Wardrobe With Our Winter Styles.</p>
+            </div>
+            </div>
+        </section>
+        
+
+        <section class="cta">
+            <h2>SIGN UP FOR UPDATES!</h2>
+            <p>Be The First To Know About Our Latest Arrivals And Exclusive Offers.</p>
+            <form>
+                <input type="emmail" placeholder="Enter Your E-mail" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+
+            <section id="contact" class="contact">  
+                    <div class="contact-box">
+                        <h4>Urban Chic Private Limited</h4>
+                        <h4>Nehru Nagar,5th cross,Bangaluru,Karnataka,India,575004.<h4>
+                        <h4>E-mail address: querry@urbanchic.com</h4>
+                        <a href="mailto:urbanchic100@outlook.com" class="cta-button">Email Us</a>
+                    </div>
+            </section>
+
+            <footer>
+            <p>&copy; 2025 Urban Chic. All rights reserved.</p>
+        </footer>
+</body>
+</html>
